@@ -1,0 +1,512 @@
+/* estilos.css */
+
+*{
+	margin: 0;
+	padding:0;
+	box-sizing: border-box;
+	
+}
+
+
+body{
+	background-color: #F8F9FA;
+	font-family: 'Arimo', sans-serif;
+	
+}
+
+
+.contenedor{
+	margin: auto;
+	
+}
+
+.contenedor-barra-superior{
+	background-color: black;
+}
+
+
+.barra-superior{
+	max-width: 90%;
+	margin: auto;
+	padding: 10px;
+	display: flex;
+	justify-content: space-between;
+	
+	
+}
+
+
+.barra-superior-rrss a{
+	margin-top: 10px;
+	margin-left: 20px;
+
+}
+
+
+.barra-superior-registro a{
+	margin-top: 10px;
+	margin-left: 20px;	
+	font-size: 14px;
+	color: white;
+	text-decoration: none;			
+}
+
+
+.cabecera{
+	height: 300px;
+	margin-bottom: 30px;
+	background-color: white;
+	-webkit-box-shadow: 9px 7px 22px -9px rgba(0,0,0,0.75);
+	-moz-box-shadow: 9px 7px 22px -9px rgba(0,0,0,0.75);
+	box-shadow: 9px 7px 22px -9px rgba(0,0,0,0.75);
+	display: flex;
+	flex-direction: column;
+
+}
+
+
+.logo{
+	margin: auto;
+	margin-bottom: 20px;
+	justify-content: center;
+
+}
+
+.toggle{
+	display: none;
+}
+
+.menu{	
+	max-width: 100%;
+	height: 50px;
+	margin: auto;	
+}
+
+
+.menu-principal{
+	font-weight: bold;	
+	margin-top: 5px;
+	
+}
+
+
+.menu-principal li:hover{
+	border-bottom: 3px solid darkgrey;	
+
+}
+
+.submenu {
+	position: relative;
+
+}
+.submenu:hover .menu-modelos{
+	display: flex;
+}
+
+
+.menu-modelos{
+	padding-top: 10px;
+	position: absolute;
+	left:0;
+	display: none;
+
+	flex-direction: column;	
+}
+
+
+.menu-modelos li{
+	border-bottom: 1px solid gray;	
+}
+
+
+.menu li{	
+	padding: 5px 40px;	
+	list-style-type: none;
+	display: inline;
+	background-color: white;
+	left:0;				
+}
+
+
+.menu a{
+	text-decoration: none;
+	color: black;	
+}
+
+
+.banner{
+	max-width: 80%;
+	height: 400px;
+	margin: auto;	
+	border: 1px solid black;
+	background-color: white;	
+}
+
+/* ------Comienzo Formulario ------ */
+
+.contenedor-formulario{
+	max-width: 100%;
+	display: flex;
+	justify-content: center;
+	
+}
+
+.direccion{
+	width: 30%;
+	flex-direction: column;
+	margin-bottom: 20px;
+	flex-direction: column;	
+}
+
+.direccion h5 {
+	font-size: 15px;
+	padding: 10px;
+}
+
+.direccion p{
+	font-size: 12px;
+	padding: 5px;
+	
+}
+
+.mapa{
+	width: 30%;
+	border: 1px solid black;
+	margin-bottom: 20px;	
+}
+
+
+.formulario{
+	width: 40%;
+	margin-bottom: 20px;
+	padding-right: 30px;
+	background-color: gray;	
+	
+}
+
+
+form label{
+	max-width: 100%;
+	margin-top: 20px;
+	margin-left: 20px;
+	margin-bottom: 20px;
+	display: block;
+	font-size: 14px;
+	font-weight: bold;
+}
+
+form input{
+	width: 100%;
+	margin-left: 20px;
+	padding: 10px;
+}
+
+form textarea{
+	width: 100%;
+	margin-left: 20px;
+	height: 200px;
+}
+
+form [type="submit"]{
+	width: 100px;
+	background-color: red;
+	border: none;
+	color: white;
+	
+}
+
+/* -----Fin Formulario ------*/
+
+
+
+.contenedor-modelos{
+	max-width: 100%;
+	margin: auto;
+
+}
+
+
+.modelos{
+	max-width: 1000px;
+	margin: auto;
+	display: flex;
+	flex-wrap: wrap;
+  	justify-content: center;	
+}
+
+
+.modelo-zapato{
+	width: 250px;
+	height: 250px;
+	margin: 20px 20px;;
+	text-align: center;
+}
+
+
+.modelo-zapato:hover{
+	 background-color: gray;
+}
+
+.suscripcion{
+	max-width: 90%;
+	margin: auto;
+	border-top: 1px solid darkgray;
+	display: flex;
+	justify-content: center;
+}
+
+
+.newsletter{
+	max-width: 100%;
+	flex-grow: 1;	
+}
+
+
+.newsletter h4{
+	width: 300px;
+	margin-top: 30px;
+	margin-bottom: 10px;
+	display: block;
+}
+
+.newletter .sobre{
+	position: absolute; 
+}
+
+
+
+.newsletter-form [type="email"]{
+	width: 400px;
+	height: 40px;
+	margin: auto;
+	margin-bottom: 30px;
+	border: 1px solid darkgray;	
+	
+}
+
+
+.newsletter-form [type="submit"]{
+	padding: 10px ;
+	background: none;
+	border: none;
+	background-color: red;
+	color: white;
+	font-size: 16px;
+}
+
+
+footer{
+	background-color: black;	
+}
+
+
+.contenido-pie{
+	max-width: 90%;
+	margin: auto;
+	display: flex;	
+}
+
+
+.info-empresa{
+	max-width: 30%;
+	margin-top: 40px;
+	margin-bottom: 20px;
+	margin-left: 30px;
+	color: white;
+	font-size: 14px;
+	flex-grow: 1;
+}
+
+
+.rrss{
+	max-width: 30%;
+	margin-top: 40px;
+	margin-bottom: 30px;
+	padding-left: 10px;	
+	border-left: 1px solid white;
+	color: white;
+	flex-grow: 1;	
+}
+
+.rrss a{
+	margin-right: 10px;
+}
+
+
+.rrss h5{
+	font-size: 14px;
+	margin-bottom: 20px;
+}
+
+
+.creditos{
+	max-width: 40%;
+	margin-top: 40px;
+	margin-bottom: 30px;
+	padding-top: 100px;
+	padding-left: 10px;
+	border-left: 1px solid white;
+	color: white;
+	font-size: 14px;
+	text-align: right;
+	flex-grow: 1;
+			
+}
+
+
+
+/* ------------Media Queries---------------- */
+
+
+@media (max-width: 768px){
+
+	.barra-superior{
+		padding: 20px;
+	}
+
+	.barra-superior-rrss a{
+		display: none;
+	}
+
+	.barra-superior-registro{
+		display: none;
+	}
+
+	.cabecera{
+		height: 200px;
+	}
+
+	.toggle{
+		display: block;
+		position: absolute;
+	}
+
+	#boton {
+		padding: 5px;
+		background: none;
+		border: none;		
+	}
+
+	.menu-principal{
+		display: none;
+	}
+
+	.mostrar{
+		display: block;
+	}
+
+
+	.banner{
+		display: none;
+	}
+
+	.modelos{
+		justify-content: center;
+		
+	}
+
+	.contenedor-formulario{
+		max-width: 100%;
+		display: flex;
+		justify-content: center;
+		flex-direction: column;	
+	}
+
+
+	.direccion{
+		width: 100%;
+		text-align: center;
+	}
+
+
+
+	.formulario{
+		width: 100%;	
+	}
+
+	.mapa{
+		width: 100%;
+		height: 200px;
+	}
+
+	.suscripcion{
+		width: 100%;
+		margin: auto;
+
+	}
+
+
+	.newsletter{
+		max-width: 300px;
+		
+	}
+
+
+	.newsletter h4{
+		width: 100%;
+		margin: auto;
+		margin-top: 10px;
+		margin-bottom: 10px;
+	}
+
+
+
+	.newsletter-form [type="email"]{
+		width: 280px;
+		height: 40px;
+		margin: auto;
+		margin-bottom: 5px;
+		border: 1px solid darkgray;
+
+	}
+
+
+	.newsletter-form [type="submit"]{
+		margin-bottom: 20px;
+		border: none;
+		background-color: red;
+		color: white;
+		font-size: 14px;
+
+	}
+
+	
+	.contenido-pie{
+		max-width: 100%;
+		flex-direction: column;	
+		text-align: center;
+		border-bottom: 1px solid white;
+		display: flex;
+		align-items: center;
+		font-size: 8px;
+		border-bottom: 1px solid white;
+		
+	}
+
+	.info-empresa{
+		max-width: 100%;
+		margin: 20px auto;
+	}
+
+	.rrss{
+		max-width: 100%;
+		margin: 20px auto;
+		border: none;
+	}
+
+	
+	.creditos{
+		max-width: 100%;
+		margin: auto;
+		border: none;
+		padding: 20px;
+		text-align: center;
+	}
+
+	.modelo-zapato{
+		width: 100%;		
+	}
+
+}
+
+
