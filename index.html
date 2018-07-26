@@ -5,6 +5,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<link href="css/estilos.css"  rel="stylesheet">
 		<link href="https://fonts.googleapis.com/css?family=Arimo" rel="stylesheet">
+		<link href="css/swiper.css" rel="stylesheet">
 		<title>index</title>
 	</head>
 	<body>
@@ -63,8 +64,45 @@
 					</div>
 				</header>			
 			<div class="banner">
-				<img src="#" alt="#">
+				<div class="swiper-container">
+					<div class="swiper-wrapper">
+						  <div class="swiper-slide">
+							<img src="images/imagen1.jpg"alt="">
+						  </div>
+						  <div class="swiper-slide">
+							<img src="images/imagen2.jpg" alt="">
+						  </div>
+						  <div class="swiper-slide">
+							<img src="images/imagen3.jpg" alt="">
+						  </div>
+					</div>
+					<!-- Add Arrows -->
+					<div class="swiper-button-next"></div>
+					<div class="swiper-button-prev"></div>
+					
+					<!-- Add Pagination -->
+					<div class="swiper-pagination"></div>
+				</div>
 			</div>
+		
+				<!-- Enlazamos el JS -->
+				<script src="js/swiper.min.js"></script>
+				<!-- Initializamos Swiper -->
+				<script>
+					var swiper = new Swiper('.swiper-container', {
+					  navigation: {
+						nextEl: '.swiper-button-next',
+						prevEl: '.swiper-button-prev',
+					  },
+					  pagination: {
+						el: '.swiper-pagination',
+					  },
+					  autoplay: {
+						delay: 1000,
+					  },
+					});
+				</script>
+		
 			<section class="contenedor-modelos">
 				<div class="modelos">
 					<div class="modelo-zapato">
@@ -103,7 +141,8 @@
 						<p>CC Mediterranean Plaza, Nivel PB. Local P2 L24.</p>
 						<p>Valencia-Venezuela</p>
 						<p>Telefono:+58(0424) 410.70.00</p>
-					</div>					
+					</div>
+						
 					<div class="rrss">
 						<h5>Siguenos en:</h5>
 						<a href="https://www.facebook.com/MarijoCalzados-1400618359982178/"><img src="images/facebook-social-symbol.png">

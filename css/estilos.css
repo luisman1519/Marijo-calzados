@@ -135,11 +135,8 @@ body{
 
 
 .banner{
-	max-width: 80%;
-	height: 400px;
-	margin: auto;	
-	border: 1px solid black;
-	background-color: white;	
+	margin: auto;
+	text-align: center;		
 }
 
 /* ------Comienzo Formulario ------ */
@@ -151,11 +148,11 @@ body{
 	
 }
 
+
 .direccion{
-	width: 30%;
-	flex-direction: column;
+	width: 80%;
 	margin-bottom: 20px;
-	flex-direction: column;	
+	
 }
 
 .direccion h5 {
@@ -170,11 +167,17 @@ body{
 }
 
 .mapa{
-	width: 30%;
+	width: 95%;
 	border: 1px solid black;
-	margin-bottom: 20px;	
+	margin-right: 50px;
+	margin-bottom: 20px;
+	
 }
 
+.mapa iframe{
+	width: 100%;
+
+}
 
 .formulario{
 	width: 40%;
