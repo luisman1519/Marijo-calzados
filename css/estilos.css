@@ -3,25 +3,29 @@
 *{
 	margin: 0;
 	padding:0;
-	box-sizing: border-box;
-	
+	box-sizing: border-box;	
 }
 
 
 body{
 	background-color: #F8F9FA;
-	font-family: 'Arimo', sans-serif;
-	
+	font-family: 'Montserrat', sans-serif;
+}
+
+.titulos{
+	text-align: center;
+	padding: 40px;
 }
 
 
+}
 .contenedor{
 	margin: auto;
 	
 }
 
 .contenedor-barra-superior{
-	background-color: black;
+	background-color: #3c4049;
 }
 
 
@@ -31,7 +35,6 @@ body{
 	padding: 10px;
 	display: flex;
 	justify-content: space-between;
-	
 	
 }
 
@@ -46,8 +49,8 @@ body{
 .barra-superior-registro a{
 	margin-top: 10px;
 	margin-left: 20px;	
-	font-size: 14px;
-	color: white;
+	font-size: 12px;
+	color: #ff3276;
 	text-decoration: none;			
 }
 
@@ -95,6 +98,10 @@ body{
 
 }
 
+.menu-principal a:hover{
+	color: #ff3276 ;
+}
+
 .submenu {
 	position: relative;
 
@@ -139,87 +146,130 @@ body{
 	text-align: center;		
 }
 
-/* ------Comienzo Formulario ------ */
-
-.contenedor-formulario{
-	max-width: 100%;
+.contenedor-contactanos{
 	display: flex;
 	justify-content: center;
 	
 }
 
+.contenedor-direccion{
+	width: 40%;
+	display: flex;
+	flex-direction: column;
+	
+}
 
 .direccion{
-	width: 80%;
-	margin-bottom: 20px;
+	width: 100%;
+	padding: 20px;
+	flex-grow: 1;
 	
 }
 
 .direccion h5 {
-	font-size: 15px;
+	font-size: 18px;
 	padding: 10px;
+		
 }
 
 .direccion p{
-	font-size: 12px;
 	padding: 5px;
-	
+	font-size: 16px;	
 }
 
 .mapa{
-	width: 95%;
+	width: 100%;
+	margin-bottom: 50px;	
 	border: 1px solid black;
-	margin-right: 50px;
-	margin-bottom: 20px;
-	
+	border-radius: 3px;
 }
 
 .mapa iframe{
 	width: 100%;
+	overflow: hidden;	
 
+}
+
+/* ------Comienzo Formulario 
+de la pagina contacto
+ ------------------------- */
+
+.contenedor-formulario{
+	width: 50%;	
+	display: flex;
+	align-content: center;
 }
 
 .formulario{
-	width: 40%;
-	margin-bottom: 20px;
-	padding-right: 30px;
-	background-color: gray;	
-	
+	width: 100%;	
+	margin: auto;
+	padding-left: 120px;
+	display: block;
+
 }
 
 
-form label{
-	max-width: 100%;
-	margin-top: 20px;
-	margin-left: 20px;
-	margin-bottom: 20px;
+form label{	
+	width: 500px;
+	padding: 10px;
 	display: block;
-	font-size: 14px;
+	font-size: 16px;
 	font-weight: bold;
+	flex-grow: 1;
+	
 }
 
 form input{
-	width: 100%;
+	width: 500px;
 	margin-left: 20px;
+	margin: auto;
 	padding: 10px;
+	border: 1px solid black;
+	border-radius: 3px;
 }
 
 form textarea{
-	width: 100%;
-	margin-left: 20px;
+	width: 500px;
 	height: 200px;
+	border: 1px solid black;
+	border-radius: 3px;
 }
 
-form [type="submit"]{
-	width: 100px;
-	background-color: red;
+.formulario [type="submit"]{
+	width: 120px;
+	background-color: #ff3276;
+	display: block;
 	border: none;
 	color: white;
+	font-size: 16px;
 	
 }
 
-/* -----Fin Formulario ------*/
 
+/* -----Fin Formulario 
+----------------------*/
+
+/* Inicio mision-vision
+----------------------*/
+
+.mision-vision{
+	max-width: 70%;
+	height: 500px;
+	margin: auto;
+	
+}
+
+.mision-vision h3{
+	padding: 10px;
+	font-size: 24px;
+	text-align: center;
+}
+
+.mision-vision p{
+	padding: 10px;
+	padding-bottom: 0px;
+	line-height: 36px;
+}
 
 
 .contenedor-modelos{
@@ -258,6 +308,200 @@ form [type="submit"]{
 	justify-content: center;
 }
 
+/*--------- Sandalias
+---------------------*/
+.contenedor-sandalias{
+	margin: auto;
+	display: flex;
+	justify-content: center;
+}
+
+/*----------Filtros----
+--------------------------*/
+
+h3{
+	padding: 10px;
+}
+
+.filtros-zapatos{
+	width: 30%;	
+	margin-left: 100px;
+
+}
+
+.ordenar{
+	width: 300px;
+	padding: 10px;
+	text-align: left;
+	border-bottom:1px solid darkgray;
+	padding-bottom: 30px;
+}
+
+.orden{
+	width: 250px;
+	padding: 10px;
+}
+
+.colores{
+	width: 300px;
+	padding: 10px;
+	text-align: left;
+	border-bottom:1px solid darkgray;
+	padding-bottom: 30px;
+}
+
+.color{	
+	border-radius: 5px;	
+	display: flex;
+	justify-content: space-around;
+}
+
+.color1{
+	width: 25px;
+	height: 25px;
+	background-color: black;
+	border-radius: 3px;
+	display: inline-block;
+}
+
+.color2{
+	width: 25px;
+	height: 25px;
+	background-color: white;
+	border: 1px solid black;
+	border-radius: 3px;
+	display: inline-block;
+}
+.color3{
+	width: 25px;
+	height: 25px;
+	border-radius: 3px;
+	background-color: gray;
+	display: inline-block;
+}
+
+.color4{
+	width: 25px;
+	height: 25px;
+	border-radius: 3px;
+	background-color: red;
+	display: inline-block;
+}
+
+
+.mas-colores{
+	width: 300px;
+	padding: 10px;
+	padding-bottom: 30px;
+	text-align: left;
+	border-bottom:1px solid darkgray;
+}
+
+.mascolor p{
+	width: 100px;
+	border-radius: 3px;
+	text-align: center;
+	color: black;
+	border: 1px solid black;
+}
+
+.tallas{
+	padding-bottom: 30px;
+
+}
+
+.talla1{
+	width: 25px;
+	height: 25px;
+	background-color: white;
+	border: 1px solid black;
+	border-radius: 3px;
+	display: inline-block;
+}
+
+.talla2{
+	width: 25px;
+	height: 25px;
+	background-color: white;
+	border: 1px solid black;
+	border-radius: 3px;
+	display: inline-block;
+}
+.talla3{
+	width: 25px;
+	height: 25px;
+	background-color: white;
+	border: 1px solid black;
+	border-radius: 3px;
+	display: inline-block;
+}
+
+.talla4{
+	width: 25px;
+	height: 25px;
+	background-color: white;
+	border: 1px solid black;
+	border-radius: 3px;
+	display: inline-block;
+}
+
+.talla5{
+	width: 25px;
+	height: 25px;
+	background-color: white;
+	border: 1px solid black;
+	border-radius: 3px;
+	display: inline-block;
+}
+
+.tallas p{
+	padding: 5px;
+	font-size: 12px;
+	text-align: center;
+}
+
+
+
+
+/*-------Fin de filtros
+-------------------------*/
+
+
+.sandalias{
+	max-width: 70%;
+	margin: auto;
+	display: flex;
+	flex-wrap: wrap;	
+  	justify-content: center;
+  	border:1px solid pink;
+}
+
+.modelo-sandalia{
+	margin: 10px 10px;
+	
+}
+
+.contenido-modelo-sandalia{
+	width: 180px;
+	height: 150px;
+	border: 1px solid red;
+
+}
+
+.descripcion{
+	width: 180px;
+	padding: 20px;	
+	border: 1px solid red;
+	display: block;
+	overflow: hidden;
+
+}
+
+
+
+
+/*--------- Newsletter 
+------------------------ */
 
 .newsletter{
 	max-width: 100%;
@@ -289,17 +533,21 @@ form [type="submit"]{
 
 
 .newsletter-form [type="submit"]{
+	width: 120px;
 	padding: 10px ;
 	background: none;
 	border: none;
-	background-color: red;
+	background-color: #ff3276;
 	color: white;
 	font-size: 16px;
+	display: inline;
 }
+
+/* ----- Fin Newsletter ------- */
 
 
 footer{
-	background-color: black;	
+	background-color: #3c4049;	
 }
 
 
@@ -316,7 +564,7 @@ footer{
 	margin-bottom: 20px;
 	margin-left: 30px;
 	color: white;
-	font-size: 14px;
+	font-size: 16px;
 	flex-grow: 1;
 }
 
@@ -326,18 +574,22 @@ footer{
 	margin-top: 40px;
 	margin-bottom: 30px;
 	padding-left: 10px;	
-	border-left: 1px solid white;
 	color: white;
-	flex-grow: 1;	
+	flex-grow: 1;
+	text-align: center;	
 }
 
 .rrss a{
 	margin-right: 10px;
 }
 
+.rrss img{
+	width: 30px;
+}
+
 
 .rrss h5{
-	font-size: 14px;
+	font-size: 16px;
 	margin-bottom: 20px;
 }
 
@@ -348,7 +600,6 @@ footer{
 	margin-bottom: 30px;
 	padding-top: 100px;
 	padding-left: 10px;
-	border-left: 1px solid white;
 	color: white;
 	font-size: 14px;
 	text-align: right;
@@ -358,7 +609,8 @@ footer{
 
 
 
-/* ------------Media Queries---------------- */
+/* ------------Media Queries
+--------------------------- */
 
 
 @media (max-width: 768px){
@@ -382,6 +634,25 @@ footer{
 	.toggle{
 		display: block;
 		position: absolute;
+	}
+
+	.menu-principal{		
+		background-color: rgba(192,192,192,0.9);
+	}
+
+	.menu-principal li{
+		width: 400px;
+		padding: 10px;
+		border: 0.5px solid white;
+		text-align: center;
+
+		
+	}
+
+	.menu-principal a{
+		text-decoration: none;
+		color: black;
+		font-size: 20px;
 	}
 
 	#boton {
@@ -467,7 +738,7 @@ footer{
 	.newsletter-form [type="submit"]{
 		margin-bottom: 20px;
 		border: none;
-		background-color: red;
+		background-color: rgba(255,0,132,1);
 		color: white;
 		font-size: 14px;
 
