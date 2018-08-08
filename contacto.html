@@ -36,8 +36,20 @@
 						</div>
 						<div class="barra-superior-registro">
 							<a href="#">marijocalzados@gmail.com</a>
-							<a href="crear.html">Crear cuenta</a>
-							<a href="#"><img src="images/mujer.png" title="ingresar" alt="ingresar"></i></a>						
+							<a href="cuenta.html">Crear cuenta</a>
+							<button id="btnPerfil">
+								<img src="images/mujer.png" title="ingresar" alt="ingresar"></a>
+							</button>
+							<div class="ingresar" id="panelIngresar">
+								<div class="contenedor-ingresar">
+									<input type="text" name="ingresar-usuario" placeholder="Usuario">
+									<input type="text" name="ingresar-clave" placeholder="Contraseña">
+									<input type="submit" value="Ingresar">
+									<p>¿Olvidaste tu contraseña?</p>
+									<p>Si no esta registrado</p>
+									<a href="">pulse aqui</a>									
+								</div>				
+							</div>							
 						</div>
 					</div>
 				</div>
@@ -77,13 +89,13 @@
 				<div class="contenedor-formulario">
 					<form class="formulario">
 					    <label for="nombre">Nombre:</label>
-					    <input id="nombre" name="nombre" placeholder="Nombre completo">
+					    <input id="nombre" name="nombre" placeholder="Nombre">
 					    <label for="apellido">Apellido:</label>
-					    <input id="apellido" name="apellido" placeholder="Apellido completo">
+					    <input id="apellido" name="apellido" placeholder="Apellido">
 					    <label for="email">Email:</label>
 					    <input id="email" name="email" type="email" placeholder="ejemplo@email.com">
 					    <label for="mensaje">Mensaje:</label>
-					    <textarea id="mensaje" name="mensaje" placeholder="Danos tu mensaje"></textarea>
+					    <textarea id="mensaje" name="mensaje" placeholder="Escribe tu mensaje"></textarea>
 					    <input type="submit" name="submit" value="Enviar">
 					</form>	
 				</div>
