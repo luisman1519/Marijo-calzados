@@ -45,6 +45,61 @@ body{
 
 }
 
+.barra-superior-registro{
+	position: relative;
+}
+
+
+
+
+.ingresar{
+	width: 280px;
+	height: 280px;
+	right: 0;
+	padding: 20px;
+	top:38px;
+	background-color: gray;
+	position: absolute;
+	display: none;
+}
+
+.ingresar input{
+	width: 250px;
+	margin: auto;
+	margin-bottom: 10px;
+	border: none;
+	padding: 10px;
+	border-radius: 3px;
+}
+
+.ingresar [type="submit"]{
+	background-color: #ff3276;
+	display: block;
+	border: none;
+	color: white;
+	font-size: 16px;
+}
+
+.ingresar p{
+	color: white;
+	text-align: center;
+}
+
+.mostrar{
+	display: block;
+}
+
+#btnPerfil{
+	margin-left: 10px;
+	background: none;
+	border: none;
+}
+
+.pulsar{
+	color: white;
+	text-align: center;
+}
+
 
 .barra-superior-registro a{
 	margin-top: 10px;
@@ -220,7 +275,7 @@ form label{
 }
 
 form input{
-	width: 500px;
+	width: 380px;
 	margin-left: 20px;
 	margin: auto;
 	padding: 10px;
@@ -229,7 +284,7 @@ form input{
 }
 
 form textarea{
-	width: 500px;
+	width: 380px;
 	height: 200px;
 	border: 1px solid black;
 	border-radius: 3px;
@@ -473,7 +528,7 @@ h3{
 	display: flex;
 	flex-wrap: wrap;	
   	justify-content: center;
-  	border:1px solid pink;
+  	
 }
 
 .modelo-sandalia{
@@ -484,14 +539,13 @@ h3{
 .contenido-modelo-sandalia{
 	width: 180px;
 	height: 150px;
-	border: 1px solid red;
+	
 
 }
 
 .descripcion{
 	width: 180px;
 	padding: 20px;	
-	border: 1px solid red;
 	display: block;
 	overflow: hidden;
 
@@ -641,7 +695,8 @@ footer{
 	}
 
 	.menu-principal li{
-		width: 400px;
+		max-width: 400px;
+		width: 90vh;
 		padding: 10px;
 		border: 0.5px solid white;
 		text-align: center;
@@ -665,13 +720,12 @@ footer{
 		display: none;
 	}
 
-	.mostrar{
-		display: block;
-	}
-
-
 	.banner{
 		display: none;
+	}
+
+	.mostrar{
+		display: block;
 	}
 
 	.modelos{

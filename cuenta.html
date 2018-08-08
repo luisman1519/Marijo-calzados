@@ -6,7 +6,7 @@
 		<link href="css/estilos.css"  rel="stylesheet">
 		<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
 		<link rel="shortcut icon" type="image/png" href="images/marijo-favicon.png"/>
-		<title>Contacto</title>
+		<title>Crear Cuenta</title>
 	</head>
 	<body>
 		<div class="contenedor">
@@ -36,8 +36,17 @@
 						</div>
 						<div class="barra-superior-registro">
 							<a href="#">marijocalzados@gmail.com</a>
-							<a href="crear.html">Crear cuenta</a>
-							<a href="#"><img src="images/mujer.png" title="ingresar" alt="ingresar"></i></a>						
+							<a href="#">Crear cuenta</a>
+							<button id="btnPerfil">
+								<img src="images/mujer.png" title="ingresar" alt="ingresar"></a>
+							</button>
+							<div class="ingresar" id="panelIngresar">
+								<input type="text" name="ingresar-usuario" placeholder="Usuario">
+								<input type="text" name="ingresar-clave" placeholder="Clave">
+								<input type="submit" value="ingresar">
+								<p>Si no esta registrado</p>
+								<a href="" class="pulsar">pulse aqui</a>			
+							</div>													
 						</div>
 					</div>
 				</div>
@@ -63,28 +72,19 @@
 				</div>				
 			</header>
 			<div class="contenedor-contactanos">				
-				<div class="contenedor-direccion">
-					<div class="direccion">
-						<h5>Ubicanos en:</h5>
-						<p>CC Mediterranean Plaza, Nivel PB. Local P2 L24.</p>
-						<p>Valencia-Venezuela</p>
-						<p>Telefono:+58(0424) 410.70.00</p>
-					</div>
-					<div class="mapa">
-						<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d62828.4870922351!2d-68.03206065066884!3d10.198477285036658!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e805d8b8706bb81%3A0xeda673969ae3f4f!2sC.+C.+Mediterranean+Plaza!5e0!3m2!1ses-419!2sar!4v1528469511011" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
-					</div>
-				</div>
 				<div class="contenedor-formulario">
-					<form class="formulario">
+					<form class="formulario" action="crear.php" method="post">
 					    <label for="nombre">Nombre:</label>
-					    <input id="nombre" name="nombre" placeholder="Nombre completo">
+					    	<input id="nombre" name="nombre" placeholder="Nombre completo">
 					    <label for="apellido">Apellido:</label>
-					    <input id="apellido" name="apellido" placeholder="Apellido completo">
+					    	<input id="apellido" name="apellido" placeholder="Apellido completo">
 					    <label for="email">Email:</label>
-					    <input id="email" name="email" type="email" placeholder="ejemplo@email.com">
-					    <label for="mensaje">Mensaje:</label>
-					    <textarea id="mensaje" name="mensaje" placeholder="Danos tu mensaje"></textarea>
-					    <input type="submit" name="submit" value="Enviar">
+					    	<input id="email" name="email" type="email" placeholder="ejemplo@email.com">
+					    <label for="usuario">Usuario:</label>
+					    	<input id="usuario" name="usuario" placeholder="usuario">
+					    <label for="usuario">Clave:</label>
+					    	<input id="clave" name="clave" type="password" placeholder="clave">						    
+					    	<input type="submit" name="submit" value="Crear Cuenta">
 					</form>	
 				</div>
 			</div>
