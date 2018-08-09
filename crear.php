@@ -6,7 +6,7 @@
 	$apellido = $_POST['apellido'];
 	$email    = $_POST['email'];
 	$usuario  = $_POST['usuario'];
-	$clave    = md5($_POST['clave']);
+	$clave    = $_POST['clave'];
 	
 	
 	
@@ -31,5 +31,5 @@
 					$con, $crear
 				   );
 	
-	header("location: crear.html");
+	header("location: cuenta.html");
 ?>
