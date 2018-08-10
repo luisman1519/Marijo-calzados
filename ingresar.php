@@ -11,7 +11,7 @@
 	// Genero la query
 	$preg = "SELECT * FROM usuarios
 			 WHERE usuario = '$usuario'
-			 AND   clave   = '$clave'";
+			 AND   contrasenia   = '$clave'";
 	
 	// Ejecuto la query
 	$preg_ej = mysqli_query($con, $preg);

@@ -67,7 +67,7 @@ body{
 	text-align: center;	
 }
 
-.contenedor-ingresar a{	
+.contenedor-ingresar.contenedor-ingresar a{	
 	color: white;
 }
 
@@ -480,6 +480,9 @@ h3{
 	border-radius: 3px;
 	text-align: center;
 	display: inline-block;
+}
+.tallaNum[disabled="true"]{
+	border: 1px solid gray;
 }
 
 
